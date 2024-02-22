@@ -15,4 +15,4 @@ RUN BACKGROUND http-server -p 8000
 EXPOSE WEBSITE http://localhost:8000
 
 SECRET ENV API_KEY
-RUN echo "$API_KEY" | base64 -d > ~/api_key.js
+RUN echo "secret is: $API_KEY"
