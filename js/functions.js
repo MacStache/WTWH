@@ -1,4 +1,3 @@
-import { api_key } from './api_key.js';
 const temp_span = document.querySelector('#temp');
 const speed_span = document.querySelector('#speed');
 const direction_span = document.querySelector('#direction');
@@ -6,6 +5,7 @@ const description_span = document.querySelector('#description');
 const icon_img = document.querySelector('img');
 const url = 'https://api.openweathermap.org/data/2.5/weather?';
 const icon_url = 'http://openweathermap.org/img/wn/';
+const api_key = process.env.API_KEY;
 
 const getLocation = () => {
     if (navigator.geolocation) {
